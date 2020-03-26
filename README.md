@@ -19,4 +19,6 @@ Please read this txt file before use the website I develop.
 
 7) My full name is : Netanel Abutbul ( נתנאל אבוטבול), ID number - 208207027.
 
-the website 
+8) the website is located under my GIT user -  https://github.com/matanz121/CoronaWebsite
+
+--------------------------------ENJOY-------------------------------------
