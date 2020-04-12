@@ -111,37 +111,72 @@
                 <br>
                 drug-side effects
                 which based on more than milliards user posts.<br><br>
-                In order to search with Web1 about drug side effects you will have to search the spesific word as in the site</br>
-                In Web2 - you will have the option to search in Blogs/Wikis or find it in the search if it's in XML etc. </br>
-                In Web3 - you will have the option to search part of the name of the drug or something that related to this drug and you will find it </br></br>
+                In order to search with Web1 about drug side effects you will have to search the spesific word as in a spesific site</br>
+                In Web2 - you will have the option to search in Blogs/Wikis (ex: Google) or find it in the search if it's in XML etc. </br>
+                In Web3 - you will have the option to search part of the name of the drug or something that related to this drug in the search engine like google and you will find it </br>
+                more over you will have access to a huge databases with lot of sources with the information you need. </br></br>
             </div>
             </section>
             <br><br>
             <section id="contact" class="section">
             <div id="title">
                 contact me </br></br>
-                <div id= "text">
-                <form action="PHP/mail.php" method="POST">
-                    <label class="con"> Enter your firstname : </label>
-                    <input type="text" name="firstname"/>
-                    <br>
-                    <label class="con"> Enter your lastname : </label>
-                    <input type="text" name="lastname"/>
-                    <br>
-                    <label class="con"> Enter your email address : </label>
-                    <input type="text" name="email"/>
-                    <br>
-                    <label class="con"> Enter your message : </label>
-                    <input type="text" name="message"/>
-                    <br>
-                    <input type="submit" class="pol" value="Send"/>
-                </form>
-                <br/><br/><br/>
-                </div>
             </div>
+            <!-- START HERE -->
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbz7F2Uz9emPhqKbhNfMtk9UGlyze1I5Ux52uHFe8Q/exec">
+
+                <div class="form-elements">
+                <fieldset class="pure-group">
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" placeholder="What your Mom calls you" />
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="10"
+                    placeholder="Tell us what's on your mind..."></textarea>
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="email"><em>Your</em> Email Address:</label>
+                    <input id="email" name="email" type="email" value=""
+                    required placeholder="your.name@email.com"/>
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="color">Favourite Color: </label>
+                    <input id="color" name="color" placeholder="green" />
+                </fieldset>
+
+                <fieldset class="pure-group honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+                </fieldset>
+
+                <button class="button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                </div>
+
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div class="thankyou_message" style="display:none;">
+                <h2><em>Thanks</em> for contacting us!
+                    We will get back to you soon!</h2>
+                </div>
+
+            </form>
+
+            <!-- Submit the Form to Google Using "AJAX" -->
+            <script data-cfasync="false" src="form-submission-handler.js"></script>
+            <!-- END -->
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </section>
             
+
             <script type="text/javascript">
             $(function(){
                 $("#nav a").click(function(e){

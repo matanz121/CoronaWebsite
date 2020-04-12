@@ -21,4 +21,6 @@ Please read this txt file before use the website I develop.
 
 8) the website is located under my GIT user -  https://github.com/matanz121/CoronaWebsite
 
+9) the website is accesible under the following site - https://bbccmoxh3uzcpvf4dwhbpg-on.drv.tw/www.netanelCorona.com/
+
 --------------------------------ENJOY-------------------------------------
